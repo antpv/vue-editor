@@ -9,9 +9,9 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 
 let dbLOL = {
-  templateTextarea: `<div>Vue js {{ name }} inside</div>`,
+  templateTextarea: `<div>Hello {{ name }}!</div>`,
   componentTextarea: `{
-  name: 'test',
+  name: 'Component name',
   data() {
     return {
       name: 'John'
@@ -19,7 +19,7 @@ let dbLOL = {
   }
 }`,
   cssTextarea: `div {
-  background: red
+  background: orange;
 }`
 }
 
